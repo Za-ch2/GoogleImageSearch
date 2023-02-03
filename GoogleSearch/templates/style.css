@@ -1,0 +1,17 @@
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+body {
+    text-align: center;
+}
+
+form {
+    display: inline-block;
+    text-align: left;
+}
+
+  

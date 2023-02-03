@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>Product Image</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+        form {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>{{ productName }}</h1>
+    <img src="{{ productImageURL }}" alt="{{ productName }}">
+    <br><br>
+    <form method="post" action="{{url_for('index')}}">
+        <input type="hidden" name="product_name" value="{{ productName }}">
+        <input type="submit" value="Search Again">
+        <input type="hidden" name="search_again" value="True">
+    </form>
+</body>
+</html>
